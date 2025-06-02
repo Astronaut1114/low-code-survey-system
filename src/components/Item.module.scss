@@ -1,0 +1,14 @@
+.container{
+    margin-bottom: 24px;
+    // background-color: #e3e3e3;
+    box-sizing: border-box;
+    padding: 10px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+}
