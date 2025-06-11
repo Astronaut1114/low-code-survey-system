@@ -1,10 +1,17 @@
-import { FC } from "react";
+import { FC,useEffect } from "react";
 import { useNavigate,Link } from "react-router-dom";
 import {Button,Typography} from 'antd'
 import style from './Home.module.scss'
 import {MANGER_LIST} from '../router/index'
+import axios from 'axios'
 const Home:FC = function(){
     const {Title,Paragraph} = Typography
+    useEffect(()=>{
+        axios.get('/api/test').then(res=>{
+            console.log(res,"Ressss");
+            
+        })
+    })
     const nav = useNavigate()
     return (
         <div className={style.context}>
